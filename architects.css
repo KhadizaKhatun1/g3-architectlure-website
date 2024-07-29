@@ -14,6 +14,10 @@
 .text-color{
     color: #424242;
 }
+.text-primary{
+    color: #FF900E;
+
+}
 .bg-light{
     background-color:  rgba(255, 144, 14, 0.10);
 }
@@ -41,6 +45,10 @@ main{
     /* normally max width is 1440px and margin 0 auto is required here */
     max-width: 1440px;
     margin: 0 auto;
+}
+.section-title{
+    font-size: 3rem;
+    font-weight: 700;
 }
 /* header styles */
 /* navbar styles */
@@ -94,16 +102,32 @@ main{
     max-width: 537px;
     margin-left: 130px;
 }
-.feature-title{
-    font-size: 3rem;
-    font-weight: 700;
-}
+
 #quick-list{
     font-weight:500;
 }
 /* responsive media query */
 @media screen and (max-width:576px){
-    .navbar,nav-link{
+    .navbar,
+    .nav-link,
+    .teams{
         flex-direction: column;
     }
+    .team-image-container{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .our-features{
+        margin-left: 50px;
+    }
 }
+/* medium device responsive */
+@media screen and (min-width:576px) and (max-width:992px){
+    .teams{
+        flex-direction: column;
+    }
+    .our-features{
+        margin: 50px auto;
+    }
+
+}
+    
