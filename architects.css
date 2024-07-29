@@ -31,8 +31,16 @@
     margin-bottom: 10px;
     border: none;
     margin: 30px 0px;
-    
+}
+main>section{
+    margin-top: 130px;
+}
 
+/* main section style under shared style */
+main{
+    /* normally max width is 1440px and margin 0 auto is required here */
+    max-width: 1440px;
+    margin: 0 auto;
 }
 /* header styles */
 /* navbar styles */
@@ -70,6 +78,28 @@
 }
 .banner-image{
     width: 100%;
+}
+/* team and feature related styles */
+.teams{
+    align-items: center;
+    
+}
+.team-image-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 24px;
+}
+/* features styles */
+.our-features{
+    max-width: 537px;
+    margin-left: 130px;
+}
+.feature-title{
+    font-size: 3rem;
+    font-weight: 700;
+}
+#quick-list{
+    font-weight:500;
 }
 /* responsive media query */
 @media screen and (max-width:576px){
